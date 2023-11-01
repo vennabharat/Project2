@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TC6-Ry-KhJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnz-0s-OvY">
+                                <rect key="frame" x="107" y="144" width="200" height="100"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="estonia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c8D-WZ-EEn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOq-kJ-5GR">
+                                <rect key="frame" x="107" y="404" width="200" height="100"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="estonia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LDJ-U0-4EN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncv-Ic-nUg">
+                                <rect key="frame" x="107" y="274" width="200" height="100"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="estonia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Ma-M1-8hX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ncv-Ic-nUg" firstAttribute="top" secondItem="Pnz-0s-OvY" secondAttribute="bottom" constant="30" id="JUf-QL-2aw"/>
+                            <constraint firstItem="ncv-Ic-nUg" firstAttribute="centerX" secondItem="Pnz-0s-OvY" secondAttribute="centerX" id="PqU-0A-B2U"/>
+                            <constraint firstItem="OOq-kJ-5GR" firstAttribute="top" secondItem="ncv-Ic-nUg" secondAttribute="bottom" constant="30" id="VeR-Tc-Nfc"/>
+                            <constraint firstItem="Pnz-0s-OvY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="Z2f-hK-dmS"/>
+                            <constraint firstItem="Pnz-0s-OvY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nay-xL-5LW"/>
+                            <constraint firstItem="OOq-kJ-5GR" firstAttribute="centerX" secondItem="ncv-Ic-nUg" secondAttribute="centerX" id="yuQ-uY-GL3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xi8-Jq-hpU"/>
+                    <connections>
+                        <outlet property="button1" destination="Pnz-0s-OvY" id="xZu-Ms-ahm"/>
+                        <outlet property="button2" destination="ncv-Ic-nUg" id="a7e-aA-bWA"/>
+                        <outlet property="button3" destination="OOq-kJ-5GR" id="yNA-1K-o6h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991.304347826087" y="4.6875"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C7Y-nn-3YA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TC6-Ry-KhJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8mE-rV-jTu">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kPd-Na-Wvx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ev4-py-SrZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81.159420289855078" y="4.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="estonia" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
